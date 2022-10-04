@@ -1,0 +1,89 @@
+@import './settings/fonts';
+@import './settings/colors';
+
+body {
+    font-family: $font-base;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1300px;
+}
+
+.header {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+&__photo {
+    background: transparent url('../assets/assets/Home-Hero-Image.jpg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    background-size: cover;
+    width: 898px;
+    height: 493px;
+}
+
+&__login {
+    display: flex;
+    justify-content: flex-end;
+    :last-child {
+        margin-right: 0;
+    }
+}
+
+&__menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    :last-child {
+        margin-right: 0;
+    }
+}
+
+&__right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+&__note {
+    text-align: center;
+    font: normal normal normal 32px $font-base;
+    letter-spacing: -0.76px;
+    color: $font-color-grey;
+    opacity: 1;
+    padding: 60px 60px 10px 60px;
+}
+
+&__decoration {
+    background: transparent url('../assets/assets/Decoration.svg') 0% 0% no-repeat 
+    padding-box;
+    opacity: 1;
+    background-size: cover;
+    width: 253px;
+    height: 33px;
+}
+}
+
+.menu__element {
+    text-decoration: none;
+    margin: 20px;
+}
+
+.login {
+    text-decoration: none;
+    margin: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+
+&__header {
+    text-decoration: none;
+    border: 0.75px solid $font-color-grey;
+    padding: 20px;
+    margin: 20px;
+}
+}
