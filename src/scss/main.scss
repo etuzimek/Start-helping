@@ -1,89 +1,269 @@
-@import './settings/fonts';
-@import './settings/colors';
+@import "./settings/fonts";
+@import "./settings/colors";
 
 body {
-    font-family: $font-base;
+  font-family: $font-base;
 }
 
 .container {
-    margin: 0 auto;
-    width: 1300px;
+  margin: 0 auto;
+  width: 1300px;
+  text-align: center;
 }
 
 .header {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
 
-&__photo {
-    background: transparent url('../assets/assets/Home-Hero-Image.jpg') 0% 0% no-repeat padding-box;
+  &__photo {
+    background: transparent url("../assets/assets/Home-Hero-Image.jpg") 0% 0%
+      no-repeat padding-box;
     opacity: 1;
     background-size: cover;
     width: 898px;
     height: 493px;
-}
+  }
 
-&__login {
+  &__login {
     display: flex;
     justify-content: flex-end;
-    :last-child {
-        margin-right: 0;
-    }
-}
 
-&__menu {
+    :last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__menu {
     display: flex;
     justify-content: flex-end;
     list-style: none;
-    :last-child {
-        margin-right: 0;
-    }
-}
 
-&__right {
+    :last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__right {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-}
+  }
 
-&__note {
+  &__note {
     text-align: center;
     font: normal normal normal 32px $font-base;
     letter-spacing: -0.76px;
     color: $font-color-grey;
     opacity: 1;
     padding: 60px 60px 10px 60px;
-}
+  }
 
-&__decoration {
-    background: transparent url('../assets/assets/Decoration.svg') 0% 0% no-repeat 
-    padding-box;
+  &__decoration {
+    background-image: url(../assets/assets/Decoration.svg);
     opacity: 1;
     background-size: cover;
     width: 253px;
     height: 33px;
-}
+    margin-bottom: 30px;
+  }
 }
 
 .menu__element {
-    text-decoration: none;
-    margin: 20px;
+  text-decoration: none;
+  margin: 20px;
 }
 
 .login {
+  font-size: 40px;
+  padding: 10px;
+  margin-top: 200px;
+
+  &__menu {
     text-decoration: none;
     margin: 10px;
+  }
+
+  &__details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $light-grey-color;
+    padding: 20px;
+  }
 }
 
 .button {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-&__header {
+  &__header {
     text-decoration: none;
     border: 0.75px solid $font-color-grey;
     padding: 20px;
     margin: 20px;
+  }
 }
+
+.columns {
+  display: flex;
+  justify-content: space-around;
+  font-family: $font-base;
+  color: $font-color;
+  background-color: rgba(255, 196, 0, 0.916);
+  padding: 32px;
+  margin-top: 20px;
+
+  &__numbers {
+    font-size: 90px;
+  }
+
+  &__lorem {
+    padding: 20px 45px;
+  }
+}
+
+.foursteps {
+  font-size: 38px;
+  font-family: $font-base;
+}
+
+.four {
+  padding: 30px 50px;
+  background-color: $light-grey-color;
+
+  &__columns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__image {
+    background-size: cover;
+    width: 83px;
+    height: 83px;
+  }
+
+  &__image1 {
+    background-image: url("../assets/assets/Icon-1.svg");
+  }
+  &__image2 {
+    background-image: url("../assets/assets/Icon-2.svg");
+  }
+  &__image3 {
+    background-image: url("../assets/assets/Icon-3.svg");
+  }
+  &__image4 {
+    background-image: url("../assets/assets/Icon-4.svg");
+  }
+}
+
+.aboutus {
+  display: flex;
+
+  &__about {
+    font-size: 38px;
+  }
+
+  &__left {
+    background-color: $light-grey-color;
+    padding: 50px;
+  }
+
+  &__signature {
+    background-image: url("../assets/assets/Signature.svg");
+    background-size: cover;
+    width: 210px;
+    height: 110px;
+    position: relative;
+    left: 350px;
+  }
+
+  &__image {
+    background-image: url("../assets/assets/People.jpg");
+    background-size: cover;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.help {
+  &__btns {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btns button {
+    padding: 10px;
+    margin: 8px;
+    width: 208px;
+    height: 79px;
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  &__btns button:hover {
+    border: 0.75px solid #3c3c3c;
+  }
+
+  ul {
+    list-style: none;
+  }
+}
+
+.contact {
+  display: flex;
+
+  &__image {
+    background-image: url("../assets/assets/Background-Contact-Form2.jpg");
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    opacity: 0.2;
+  }
+
+  &__right {
+    margin: 200px 20px 20px 20px;
+  }
+
+  &__name {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__form {
+    border: none;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+  }
+
+  &__forms {
+    margin-bottom: 200px;
+  }
+
+  &__details {
+    font-weight: bold;
+    text-align: left;
+  }
+
+  &__massage {
+    font-weight: bold;
+  }
+
+  &__button {
+    width: 180px;
+    position: relative;
+    left: 80px;
+    margin: 20px;
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid lightgray;
+  }
+}
+
+.lists {
+  display: flex;
 }

@@ -1,15 +1,17 @@
 import React from "react";
 
-function Login() {
+function Register() {
     return (
         <>
             <div className="login__site container">
-                <div className="login">Zaloguj się</div>
+                <div className="login">Załóż konto</div>
                 <center><div className="header__decoration" /></center>
                 <form className="login__details">
                     <label>Email</label>
                     <input type="text" />
-                    <label>Hasło </label>
+                    <label>Hasło</label>
+                    <input type="password" />
+                    <label>Powtórz hasło</label>
                     <input type="password" />
                 </form>
                 <a>Załóż konto</a>
@@ -18,4 +20,4 @@ function Login() {
         </>
     );
 }
-export default Login;
+export default Register;
