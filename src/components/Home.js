@@ -1,6 +1,6 @@
 import React from "react";
-import Contact from "./Contact";
 import WhoWeHelp from "./WhoWeHelp";
+import ContactForm from "./Contact";
 
 function Home() {
   return (
@@ -116,7 +116,7 @@ function Home() {
         <div className="aboutus__image"></div>
       </div>
       <WhoWeHelp />
-      <Contact />
+      <ContactForm />
     </div>
   );
 }

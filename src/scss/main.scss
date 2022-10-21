@@ -218,20 +218,26 @@ body {
   display: flex;
 
   &__image {
-    background-image: url("../assets/assets/Background-Contact-Form2.jpg");
+    background-image: url("../assets/assets/Background-Contact-Form.jpg");
     background-size: cover;
     width: 100%;
-    height: auto;
-    opacity: 0.2;
+    height: 100%;
   }
 
   &__right {
     margin: 200px 20px 20px 20px;
+    position: relative;
+    left: 320px;
+  }
+
+  &__title {
+    font-size: 38px;
+    color: $font-color-grey;
   }
 
   &__name {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
 
   &__form {
@@ -254,9 +260,9 @@ body {
   }
 
   &__button {
-    width: 180px;
     position: relative;
-    left: 80px;
+    left: 650px;
+    width: 180px;
     margin: 20px;
     padding: 10px 25px;
     background: transparent;
