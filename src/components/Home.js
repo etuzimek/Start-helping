@@ -5,7 +5,7 @@ import ContactForm from "./Contact";
 function Home() {
   return (
     <div className="container">
-      <div className="header">
+      <div name className="header">
         <div className="header__photo" />
         <div className="header__nav">
           <div className="header__right">

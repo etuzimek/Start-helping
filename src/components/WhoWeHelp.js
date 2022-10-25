@@ -1,13 +1,11 @@
 import { useState } from "react";
 import ReactPaginate from "react-paginate";
 
-const fundation1 = [{ name: "Fundacja “Dbam o Zdrowie”" }, { details: "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.”" }, { type: "ubrania, jedzenie, sprzęt AGD, meble, zabawki" }];
-const fundation2 = [{ name: "Fundacja “Dbam o Zdrowie”" }, { details: "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.”" }, { type: "ubrania, jedzenie, sprzęt AGD, meble, zabawki" }];
+const fundations = [{ info: "W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.", name: "Fundacja “Dbam o Zdrowie”", details: "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.", type: "ubrania, jedzenie, sprzęt AGD, meble, zabawki" }, { name: "Fundacja “Dla dzieci”", details: "Cel i misja: Pomoc dzieciom z ubogich rodzin.", type: "ubrania, meble, zabawki" }, { name: "Fundacja “Bez domu”", details: "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.", type: "ubrania, jedzenie, ciepłe koce" }, { name: "Fundacja “Pomoc dla zwierząt“", details: "Cel i misja: Pomoc bezdomnym zwierzętom", type: "jedzenie, poszukiwanie domu" }, { name: "Fundacja “Samotny opiekun”", details: "Cel i misja: Pomoc opiekunom wychowującym samotnie dzieci", type: "ubrania, meble, zabawki" }];
 
+const orgnizations = [{ name: "Organizacja “Lorem Ipsum 1”", details: "Quis varius quam quisque id diam vel quam elementum pulvinar.", type: "Egestas, sed, tempus" }, { name: "Organizacja “Lorem Ipsum 2”", details: "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.", type: "Ut, aliquam, purus, sit, amet" }, { name: "Organizacja “Lorem Ipsum 3”", details: "Scelerisque in dictum non consectetur a erat nam.", type: "Mi, quis, hendrerit, dolor" }, { name: "Organizacja “Lorem Ipsum 4”", details: "Quis varius quam quisque id diam vel quam elementum pulvinar.", type: "Ut, aliquam, purus, sit, amet" }, { name: "Organizacja “Lorem Ipsum 5”", details: "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.", type: "Egestas, sed, tempus" }];
 
-const fundations = fundation1;
-const orgnizations = [{ name: "Organizacja “Lorem Ipsum 1”" }, { details: "Quis varius quam quisque id diam vel quam elementum pulvinar." }, { type: "Egestas, sed, tempus" }];
-const colections = [{ name: "Zbiórka “Lorem Ipsum 1”" }, { details: "Quis varius quam quisque id diam vel quam elementum pulvinar." }, { type: "Egestas, sed, tempus" }];
+const colections = [{ name: "Zbiórka “Lorem Ipsum 1”", details: "Quis varius quam quisque id diam vel quam elementum pulvinar.", type: "Egestas, sed, tempus" }, { name: "Zbiórka “Lorem Ipsum 2”", details: "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.", type: "Ut, aliquam, purus, sit, amet" }, { name: "Zbiórka “Lorem Ipsum 3”", details: "Scelerisque in dictum non consectetur a erat nam.", type: "Mi, quis, hendrerit, dolor" }];
 
 const WhoWeHelp = () => {
     const [list, setList] = useState(fundations);
@@ -22,6 +20,7 @@ const WhoWeHelp = () => {
             return (
                 <div className="lists">
                     <div className="lists__left">
+                        {/* <p>{lists.info}</p> */}
                         <p>{lists.name}</p>
                         <p>{lists.details}</p>
                     </div>
@@ -37,7 +36,7 @@ const WhoWeHelp = () => {
     };
 
     return (
-        <div className="help">
+        <a name="whowehelp" className="help">
             <p className="foursteps">Komu pomagamy?</p>
             <center>
                 <div className="header__decoration" />
@@ -50,18 +49,14 @@ const WhoWeHelp = () => {
             {displayList}
             <ul>
                 <ReactPaginate
-                    previousLabel={"Previous"}
-                    nextLabel={"Next"}
                     pageCount={pageCount}
                     onPageChange={changePage}
                     containerClassName={"paginationBttns"}
-                    previousLinkClassName={"previousBttn"}
-                    nextLinkClassName={"nextBttn"}
                     disabledClassName={"paginationDisabled"}
                     activeClassName={"paginationActive"}
                 />
             </ul>
-        </div>
+        </a>
     )
 }
 

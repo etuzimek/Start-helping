@@ -68,22 +68,25 @@ function ContactForm() {
                     <center>
                         <div className="header__decoration" />
                     </center>
-                    <form className="contact__name" onSubmit={handleSubmit}>
-                        <label>
-                            Wpisz swoje imię
-                            <br />
-                            <input type="text" className="form-control" value={name} onChange={e => setName(e.target.value)} />
-                        </label>
-                        <label>
-                            Wpisz swój email
-                            <br />
-                            <input type="text" className="form-control" value={email} onChange={e => setEmail(e.target.value)} />
-                        </label>
-                        <label>
+                    <form onSubmit={handleSubmit}>
+                        <div className="contact__name">
+                            <label>
+                                Wpisz swoje imię
+                                <br />
+                                <input type="text" value={name} onChange={e => setName(e.target.value)} />
+                            </label >
+                            <label>
+                                Wpisz swój email
+                                <br />
+                                <input type="text" value={email} onChange={e => setEmail(e.target.value)} />
+                            </label>
+                        </div>
+                        <label style={{ fontWeight: "bold" }}>
                             Wpisz swoją wiadomość
-                            <br />
-                            <textarea value={message} className="form-control" onChange={e => setMessage(e.target.value)} />
                         </label>
+                        <br />
+                        <textarea style={{ width: "440px", height: "100px", backgroundColor: "transparent", borderBottom: "1px solid grey" }} value={message} onChange={e => setMessage(e.target.value)} />
+
                         <button className="contact__button" type="submit">Wyślij</button>
                     </form>
 

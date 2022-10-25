@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Login from "./components/Login";
 import Register from "./components/Register";
 import Nav from "./components/Nav";
+import Logout from "./components/Logout";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/logout" element={<Logout />} />
         <Route path="/register" element={<Register />} />
       </Routes>
 
