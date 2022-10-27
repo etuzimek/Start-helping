@@ -52,9 +52,9 @@ function Home() {
         </div>
       </div>
       <div>
-        <a name="foursteps" className="foursteps">
+        <div id="foursteps" className="foursteps">
           Wystarczą 4 proste kroki
-        </a>
+        </div>
         <center>
           <div className="header__decoration" />
         </center>
@@ -100,9 +100,9 @@ function Home() {
       </div>
       <div className="aboutus">
         <div className="aboutus__left">
-          <a name="aboutus" className="aboutus__about">
+          <div id="aboutus" className="aboutus__about">
             O nas
-          </a>
+          </div>
           <center>
             <div className="header__decoration" />
           </center>

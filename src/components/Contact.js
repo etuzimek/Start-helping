@@ -61,40 +61,40 @@ function ContactForm() {
     };
 
     return (
-        <a name="contact" className="contact">
+        <div id="contact" className="contact">
             <div className="contact__image">
-                <div className="contact__right">
-                    <p className="contact__title" >Skontaktuj się z nami</p>
-                    <center>
-                        <div className="header__decoration" />
-                    </center>
-                    <form onSubmit={handleSubmit}>
-                        <div className="contact__name">
-                            <label>
-                                Wpisz swoje imię
-                                <br />
-                                <input type="text" value={name} onChange={e => setName(e.target.value)} />
-                            </label >
-                            <label>
-                                Wpisz swój email
-                                <br />
-                                <input type="text" value={email} onChange={e => setEmail(e.target.value)} />
+                <div className="opacityBackground">
+                    <div className="contact__right">
+                        <p className="contact__title" >Skontaktuj się z nami</p>
+                        <center>
+                            <div className="header__decoration" />
+                        </center>
+                        <form onSubmit={handleSubmit}>
+                            <div className="contact__name">
+                                <label>
+                                    Wpisz swoje imię
+                                    <br />
+                                    <input type="text" value={name} onChange={e => setName(e.target.value)} />
+                                </label >
+                                <label>
+                                    Wpisz swój email
+                                    <br />
+                                    <input type="text" value={email} onChange={e => setEmail(e.target.value)} />
+                                </label>
+                            </div>
+                            <label style={{ fontWeight: "bold" }}>
+                                Wpisz swoją wiadomość
                             </label>
-                        </div>
-                        <label style={{ fontWeight: "bold" }}>
-                            Wpisz swoją wiadomość
-                        </label>
-                        <br />
-                        <textarea style={{ width: "440px", height: "100px", backgroundColor: "transparent", borderBottom: "1px solid grey" }} value={message} onChange={e => setMessage(e.target.value)} />
-
-                        <button className="contact__button" type="submit">Wyślij</button>
-                    </form>
-
-                    {success && <h2>Form sent!</h2>}
-                    {errors.map(error => <p key={error}>{error}</p>)}
+                            <br />
+                            <textarea style={{ width: "440px", height: "100px", backgroundColor: "transparent", borderBottom: "1px solid grey" }} value={message} onChange={e => setMessage(e.target.value)} />
+                            <button className="contact__button" type="submit">Wyślij</button>
+                        </form>
+                        {success && <h2>Form sent!</h2>}
+                        {errors.map(error => <p key={error}>{error}</p>)}
+                    </div>
                 </div>
             </div>
-        </a>
+        </div>
     );
 }
 

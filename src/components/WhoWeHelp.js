@@ -20,7 +20,7 @@ const WhoWeHelp = () => {
             return (
                 <div className="lists">
                     <div className="lists__left">
-                        {/* <p>{lists.info}</p> */}
+                        {/* <p style={{fontFamily:"22", textAlign:"center"}}>{lists.info}</p> */}
                         <p>{lists.name}</p>
                         <p>{lists.details}</p>
                     </div>
@@ -36,7 +36,7 @@ const WhoWeHelp = () => {
     };
 
     return (
-        <a name="whowehelp" className="help">
+        <div id="whowehelp" className="help">
             <p className="foursteps">Komu pomagamy?</p>
             <center>
                 <div className="header__decoration" />
@@ -56,7 +56,7 @@ const WhoWeHelp = () => {
                     activeClassName={"paginationActive"}
                 />
             </ul>
-        </a>
+        </div>
     )
 }
 
