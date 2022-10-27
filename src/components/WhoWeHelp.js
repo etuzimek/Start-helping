@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ReactPaginate from "react-paginate";
+import decorationImg from '../assets/Decoration.svg';
 
 const fundations = [{ info: "W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.", name: "Fundacja “Dbam o Zdrowie”", details: "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.", type: "ubrania, jedzenie, sprzęt AGD, meble, zabawki" }, { name: "Fundacja “Dla dzieci”", details: "Cel i misja: Pomoc dzieciom z ubogich rodzin.", type: "ubrania, meble, zabawki" }, { name: "Fundacja “Bez domu”", details: "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.", type: "ubrania, jedzenie, ciepłe koce" }, { name: "Fundacja “Pomoc dla zwierząt“", details: "Cel i misja: Pomoc bezdomnym zwierzętom", type: "jedzenie, poszukiwanie domu" }, { name: "Fundacja “Samotny opiekun”", details: "Cel i misja: Pomoc opiekunom wychowującym samotnie dzieci", type: "ubrania, meble, zabawki" }];
 
@@ -38,9 +39,7 @@ const WhoWeHelp = () => {
     return (
         <div id="whowehelp" className="help">
             <p className="foursteps">Komu pomagamy?</p>
-            <center>
-                <div className="header__decoration" />
-            </center>
+            <img src={decorationImg} alt="decoration"/>
             <div className="help__btns">
                 <button onClick={() => setList(fundations)}>Fundacjom</button>
                 <button onClick={() => setList(orgnizations)}>Organizacjom pozarządowym</button>

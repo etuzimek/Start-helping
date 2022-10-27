@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import decorationImg from '../assets/Decoration.svg';
 
 function ContactForm() {
     const [name, setName] = useState("");
@@ -6,7 +7,6 @@ function ContactForm() {
     const [message, setMessage] = useState("");
     const [errors, setErrors] = useState([]);
     const [success, setSuccess] = useState(false);
-
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -66,9 +66,7 @@ function ContactForm() {
                 <div className="opacityBackground">
                     <div className="contact__right">
                         <p className="contact__title" >Skontaktuj się z nami</p>
-                        <center>
-                            <div className="header__decoration" />
-                        </center>
+                        <img src={decorationImg} alt="decoration"/>
                         <form onSubmit={handleSubmit}>
                             <div className="contact__name">
                                 <label>
