@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  body {
+    font-family: $font-base;
+  }
+  
+  .container {
+    margin: 0 auto;
+    width: 1300px;
+    text-align: center;
+    }

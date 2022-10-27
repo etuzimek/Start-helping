@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./Header";
+import Header from "./header/Header";
 import Columns from "./Columns";
 import Foursteps from "./Foursteps";
 import About from "./About";
