@@ -1,8 +1,12 @@
 @import './settings/fonts';
 @import './settings/colors';
-@import '../components/header/homeHeader';
-@import '../scss/settings/global';
+@import './settings/global';
+
 @import '../components/nav/nav';
+
+@import '../components/header/homeHeader';
+
+
 
   // &__photo {
   //   background: transparent url("../assets/Home-Hero-Image.jpg") 0% 0% no-repeat
