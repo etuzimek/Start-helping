@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./header/Header";
-import Columns from "./Columns";
+import Columns from "./threeColumns/ThreeColumns";
 import Foursteps from "./Foursteps";
 import About from "./About";
 import WhoWeHelp from "./WhoWeHelp";

@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from '../nav/Nav';
+import Nav from './nav/Nav';
 import decorationImg from './Decoration.svg';
 import homeHeroImageImg from './Home-Hero-Image-New.jpg';
 

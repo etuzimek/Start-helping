@@ -3,9 +3,11 @@
 @import "./settings/global";
 @import "./settings/buttons";
 
-@import "../components/nav/nav";
+@import "../components/header/nav/nav";
 
 @import "../components/header/homeHeader";
+
+@import "../components/threeColumns/threeColumns";
 
 .login {
   display: flex;
@@ -39,24 +41,6 @@
       border-bottom: 1px solid #707070;
       width: 250px;
     }
-  }
-}
-
-.columns {
-  display: flex;
-  justify-content: space-around;
-  font-family: $font-base;
-  color: $font-color;
-  background-color: rgba(255, 196, 0, 0.916);
-  padding: 32px;
-  margin-bottom: 2rem;
-
-  &__numbers {
-    font-size: 90px;
-  }
-
-  &__lorem {
-    padding: 20px 45px;
   }
 }
 
