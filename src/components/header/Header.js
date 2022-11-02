@@ -8,23 +8,21 @@ function Header() {
     <header className="header">
       <div className="header__container">
         <img src={homeHeroImageImg} alt="box" />
-        <div>
+        <div className="header__nav">
           <Nav />
-          {/* <div className="header__right">
-            <p className="header__note">
-              Zacznij pomagać! <br />
-              Oddaj niechciane rzeczy w zaufane ręce
-            </p>
+          <div className="header__right">
+            <p>Zacznij pomagać! </p>
+            <p> Oddaj niechciane rzeczy w zaufane ręce</p>
             <img src={decorationImg} alt="decoration" />
-            <div className="button">
-              <a href="/login" className="button__header">
+            <div>
+              <button className="button">
                 ODDAJ RZECZY
-              </a>
-              <a href="/login" className="button__header">
+              </button>
+              <button className="button">
                 ZORGANIZUJ ZBIÓRKĘ
-              </a>
+              </button>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </header>
