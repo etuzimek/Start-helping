@@ -1,57 +1,48 @@
 import React from 'react'
 import decorationImg from '../assets/Decoration.svg';
+import icon1Img from '../components/fourSteps/Icon-1.svg'
+import icon2Img from '../components/fourSteps/Icon-2.svg'
+import icon3Img from '../components/fourSteps/Icon-3.svg'
+import icon4Img from '../components/fourSteps/Icon-4.svg'
 
-function Foursteps() {
+function FourSteps() {
     return (
-        <>
-            <div>
-                <div id="foursteps" className="foursteps">
-                    Wystarczą 4 proste kroki
-                </div>
-                <img src={decorationImg} alt="decoration" />
+        <section className="foursteps">
+            <div id="foursteps" className="foursteps__title">
+                Wystarczą 4 proste kroki
             </div>
-            <div className=" four four__columns">
+            <img src={decorationImg} alt="decoration" />
+            <div className="foursteps__columns">
                 <div>
-                    <center>
-                        <div className="four__image four__image1" />
-                    </center>
+                    <img src={icon1Img} alt="icon" />
                     <p>Wybierz rzeczy</p>
                     <hr />
                     <p>ubrania, zabawki, sprzęt i inne</p>
                 </div>
                 <div>
-                    <center>
-                        <div className="four__image four__image2" />
-                    </center>
+                    <img src={icon2Img} alt="icon" />
                     <p>Spakuj je</p>
                     <hr />
                     <p>skorzystaj z worków na śmieci</p>
                 </div>
                 <div>
-                    <center>
-                        <div className="four__image four__image3" />
-                    </center>
+                    <img src={icon3Img} alt="icon" />
                     <p>Zdecyduj komu chcesz pomóc</p>
                     <hr />
                     <p>wybierz zaufane miejsce</p>
                 </div>
                 <div>
-                    <center>
-                        <div className="four__image four__image4" />
-                    </center>
+                    <img src={icon4Img} alt="icon" />
                     <p>Zamów kuriera</p>
                     <hr />
                     <p>kurier przyjedzie w dogodnym terminie</p>
                 </div>
             </div>
-            <div className="button">
-                <a href="/login" className="button__header">
-                    ODDAJ RZECZY
-                </a>
-            </div>
-        </>
+            <button className="button">
+                ODDAJ RZECZY
+            </button>
+        </section>
     )
 }
 
-export default Foursteps
-
+export default FourSteps

@@ -9,6 +9,8 @@
 
 @import "../components/threeColumns/threeColumns";
 
+@import "../components/fourSteps/fourSteps";
+
 .login {
   display: flex;
   flex-direction: column;
@@ -41,41 +43,6 @@
       border-bottom: 1px solid #707070;
       width: 250px;
     }
-  }
-}
-
-.foursteps {
-  font-size: 38px;
-  font-family: $font-base;
-}
-
-.four {
-  padding: 30px 50px;
-  background-color: $light-grey-color;
-
-  &__columns {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  &__image {
-    background-size: cover;
-    width: 60px;
-    height: 60px;
-  }
-
-  &__image1 {
-    background-image: url("../assets/Icon-1.svg");
-  }
-  &__image2 {
-    background-image: url("../assets/Icon-2.svg");
-  }
-  &__image3 {
-    background-image: url("../assets/Icon-3.svg");
-  }
-  &__image4 {
-    background-image: url("../assets/Icon-4.svg");
   }
 }
 

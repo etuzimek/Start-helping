@@ -2,7 +2,7 @@ import React from 'react'
 
 function Columns() {
     return (
-        <div className="columns">
+        <section className="columns">
             <div>
                 <p className="columns__numbers">10</p>
                 <p className="columns__bags">ODDANYCH WORKÓW</p>
@@ -27,7 +27,7 @@ function Columns() {
                     enim a elit viverra elementuma. Aliquam erat volutpat.
                 </p>
             </div>
-        </div>
+        </section>
     )
 }
 
