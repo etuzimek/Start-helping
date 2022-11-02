@@ -2,16 +2,21 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-top: 30px;
+  margin-top: 37px;
 
   &__login {
     display: flex;
+    margin-right: 152px;
+    color: $grey-color;
 
     li {
-      margin: 10px;
       padding: 10px 15px;
       font-size: 0.9rem;
       border: 1px solid transparent;
+
+      a {
+        color: $grey-color;
+      }
     }
 
     :hover {
@@ -21,12 +26,21 @@
 
   &__menu {
     display: flex;
+    margin: 17px 152px 0 0;
+
+    :last-child {
+      margin-right: 0;
+    }
 
     li {
-      margin: 10px;
+      margin: 12px;
       padding: 10px 15px;
-      font-size: 1.1rem;
+      font-size: 1.125rem;
       border: 1px solid transparent;
+
+      a {
+        color: $grey-color;
+      }
     }
 
     :hover {
