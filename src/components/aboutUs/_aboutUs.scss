@@ -3,7 +3,7 @@
   margin-top: 80px;
 
   &__about {
-    margin-top: 186px;
+    margin-top: 100px;
     font-size: 38px;
     margin-bottom: 26px;
   }
@@ -11,6 +11,7 @@
   &__left {
     background-color: $light-grey-color;
     padding: 50px;
+    width: 95vw;
   }
 
   &__article {
@@ -25,7 +26,10 @@
   }
 
   &__img {
-    width: 50%;
+    width: 100vw;
     height: auto;
+    background-image: url("./People.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }

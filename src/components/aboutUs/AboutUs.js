@@ -1,7 +1,6 @@
 import React from 'react'
 import decorationImg from './Decoration.svg';
 import signatureImg from './Signature.svg';
-import peopleImg from './People.jpg';
 
 function AboutUs() {
   return (
@@ -21,7 +20,6 @@ function AboutUs() {
         </div>
       </div>
       <div className="aboutus__img">
-        <img src={peopleImg} alt="people" />
       </div>
     </section>
   )
