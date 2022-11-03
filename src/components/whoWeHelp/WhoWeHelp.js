@@ -1,8 +1,8 @@
 import { useState } from "react";
 import ReactPaginate from "react-paginate";
-import decorationImg from '../assets/Decoration.svg';
+import decorationImg from './Decoration.svg';
 
-const fundations = [{ info: "W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.", name: "Fundacja “Dbam o Zdrowie”", details: "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.", type: "ubrania, jedzenie, sprzęt AGD, meble, zabawki" }, { name: "Fundacja “Dla dzieci”", details: "Cel i misja: Pomoc dzieciom z ubogich rodzin.", type: "ubrania, meble, zabawki" }, { name: "Fundacja “Bez domu”", details: "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.", type: "ubrania, jedzenie, ciepłe koce" }, { name: "Fundacja “Pomoc dla zwierząt“", details: "Cel i misja: Pomoc bezdomnym zwierzętom", type: "jedzenie, poszukiwanie domu" }, { name: "Fundacja “Samotny opiekun”", details: "Cel i misja: Pomoc opiekunom wychowującym samotnie dzieci", type: "ubrania, meble, zabawki" }];
+const fundations = [{ name: "Fundacja “Dbam o Zdrowie”", details: "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.", type: "ubrania, jedzenie, sprzęt AGD, meble, zabawki" }, { name: "Fundacja “Dla dzieci”", details: "Cel i misja: Pomoc dzieciom z ubogich rodzin.", type: "ubrania, meble, zabawki" }, { name: "Fundacja “Bez domu”", details: "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.", type: "ubrania, jedzenie, ciepłe koce" }, { name: "Fundacja “Pomoc dla zwierząt“", details: "Cel i misja: Pomoc bezdomnym zwierzętom", type: "jedzenie, poszukiwanie domu" }, { name: "Fundacja “Samotny opiekun”", details: "Cel i misja: Pomoc opiekunom wychowującym samotnie dzieci", type: "ubrania, meble, zabawki" }];
 
 const orgnizations = [{ name: "Organizacja “Lorem Ipsum 1”", details: "Quis varius quam quisque id diam vel quam elementum pulvinar.", type: "Egestas, sed, tempus" }, { name: "Organizacja “Lorem Ipsum 2”", details: "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.", type: "Ut, aliquam, purus, sit, amet" }, { name: "Organizacja “Lorem Ipsum 3”", details: "Scelerisque in dictum non consectetur a erat nam.", type: "Mi, quis, hendrerit, dolor" }, { name: "Organizacja “Lorem Ipsum 4”", details: "Quis varius quam quisque id diam vel quam elementum pulvinar.", type: "Ut, aliquam, purus, sit, amet" }, { name: "Organizacja “Lorem Ipsum 5”", details: "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.", type: "Egestas, sed, tempus" }];
 
@@ -21,7 +21,6 @@ const WhoWeHelp = () => {
             return (
                 <div className="lists">
                     <div className="lists__left">
-                        {/* <p style={{fontFamily:"22", textAlign:"center"}}>{lists.info}</p> */}
                         <p>{lists.name}</p>
                         <p>{lists.details}</p>
                     </div>
@@ -37,14 +36,15 @@ const WhoWeHelp = () => {
     };
 
     return (
-        <div id="whowehelp" className="help">
-            <p className="foursteps">Komu pomagamy?</p>
-            <img src={decorationImg} alt="decoration"/>
+        <section id="whowehelp" className="help">
+            <p className="help__title">Komu pomagamy?</p>
+            <img src={decorationImg} alt="decoration" />
             <div className="help__btns">
                 <button onClick={() => setList(fundations)}>Fundacjom</button>
                 <button onClick={() => setList(orgnizations)}>Organizacjom pozarządowym</button>
                 <button onClick={() => setList(colections)}>Lokalnym zbiórkom</button>
             </div>
+            <p className="help__description">W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</p>
             {displayList}
             <ul>
                 <ReactPaginate
@@ -55,7 +55,7 @@ const WhoWeHelp = () => {
                     activeClassName={"paginationActive"}
                 />
             </ul>
-        </div>
+        </section>
     )
 }
 

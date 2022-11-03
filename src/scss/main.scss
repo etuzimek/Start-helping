@@ -13,6 +13,8 @@
 
 @import "../components/aboutUs/aboutUs";
 
+@import "../components/whoWeHelp/whoWeHelp";
+
 .login {
   display: flex;
   flex-direction: column;
@@ -44,49 +46,6 @@
       background-color: transparent;
       border-bottom: 1px solid #707070;
       width: 250px;
-    }
-  }
-}
-
-.help {
-  &__btns {
-    display: flex;
-    justify-content: center;
-  }
-
-  &__btns button {
-    padding: 10px;
-    margin: 8px;
-    width: 208px;
-    height: 79px;
-    border: none;
-    background-color: transparent;
-    font-size: 24px;
-    text-align: center;
-  }
-
-  &__btns button:hover {
-    border: 0.75px solid #3c3c3c;
-  }
-
-  ul {
-    list-style: none;
-  }
-}
-
-.lists {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid $primary-text-color;
-
-  &__left {
-    text-align: left;
-    font-size: 26px;
-
-    :last-child {
-      font-size: 18px;
-      padding-bottom: 30px;
     }
   }
 }

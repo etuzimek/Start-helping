@@ -3,7 +3,7 @@ import Header from "./header/Header";
 import Columns from "./threeColumns/ThreeColumns";
 import FourSteps from "../components/fourSteps/FourSteps";
 import AboutUs from "./aboutUs/AboutUs";
-import WhoWeHelp from "./WhoWeHelp";
+import WhoWeHelp from "./whoWeHelp/WhoWeHelp";
 import ContactForm from "./Contact";
 
 function Home() {
