@@ -11,6 +11,8 @@
 
 @import "../components/fourSteps/fourSteps";
 
+@import "../components/aboutUs/aboutUs";
+
 .login {
   display: flex;
   flex-direction: column;
@@ -44,40 +46,6 @@
       width: 250px;
     }
   }
-}
-
-.aboutus {
-  display: flex;
-
-  &__about {
-    font-size: 38px;
-  }
-
-  &__left {
-    background-color: $light-grey-color;
-    padding: 50px;
-  }
-
-  &__signature {
-    background-image: url("../assets/Signature.svg");
-    background-size: cover;
-    width: 210px;
-    height: 110px;
-    position: relative;
-    left: 350px;
-  }
-
-  &__image {
-    background-image: url("../assets/People.jpg");
-    background-size: cover;
-    width: 100%;
-    height: auto;
-  }
-}
-
-.foursteps {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
 }
 
 .help {

@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "./header/Header";
 import Columns from "./threeColumns/ThreeColumns";
-import FourSteps from "./FourSteps";
-import About from "./About";
+import FourSteps from "../components/fourSteps/FourSteps";
+import AboutUs from "./aboutUs/AboutUs";
 import WhoWeHelp from "./WhoWeHelp";
 import ContactForm from "./Contact";
 
@@ -12,7 +12,7 @@ function Home() {
       <Header />
       <Columns />
       <FourSteps />
-      <About />
+      <AboutUs />
       <WhoWeHelp />
       <ContactForm />
     </div>

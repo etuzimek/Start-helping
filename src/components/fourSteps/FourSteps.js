@@ -1,9 +1,9 @@
 import React from 'react'
-import decorationImg from '../assets/Decoration.svg';
-import icon1Img from '../components/fourSteps/Icon-1.svg'
-import icon2Img from '../components/fourSteps/Icon-2.svg'
-import icon3Img from '../components/fourSteps/Icon-3.svg'
-import icon4Img from '../components/fourSteps/Icon-4.svg'
+import decorationImg from './Decoration.svg';
+import icon1Img from './Icon-1.svg'
+import icon2Img from './Icon-2.svg'
+import icon3Img from './Icon-3.svg'
+import icon4Img from './Icon-4.svg'
 
 function FourSteps() {
     return (

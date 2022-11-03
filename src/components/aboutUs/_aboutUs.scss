@@ -1,0 +1,31 @@
+.aboutus {
+  display: flex;
+  margin-top: 80px;
+
+  &__about {
+    margin-top: 186px;
+    font-size: 38px;
+    margin-bottom: 26px;
+  }
+
+  &__left {
+    background-color: $light-grey-color;
+    padding: 50px;
+  }
+
+  &__article {
+    font-size: 1.875rem;
+    padding: 55px 150px 40px 150px;
+    letter-spacing: -0.6px;
+  }
+
+  &__signature {
+    text-align: right;
+    padding-right: 130px;
+  }
+
+  &__img {
+    width: 50%;
+    height: auto;
+  }
+}
