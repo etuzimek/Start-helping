@@ -59,3 +59,37 @@
     min-width: 640px;
   }
 }
+
+.paginationBttns {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+  li {
+    &:first-child,
+    &:last-child {
+      display: none;
+    }
+  }
+}
+
+.paginationBttns a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 2px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.paginationBttns a:hover {
+  border: 1px solid $primary-text-color;
+}
+
+.paginationActive a {
+  border: 1px solid $primary-text-color;
+}
+
+.opacityBackground {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 170px 0 170px 0;
+}

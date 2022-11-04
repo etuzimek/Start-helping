@@ -15,6 +15,8 @@
 
 @import "../components/whoWeHelp/whoWeHelp";
 
+@import "../components/contact/contact";
+
 .login {
   display: flex;
   flex-direction: column;
@@ -50,80 +52,5 @@
   }
 }
 
-.contact {
-  display: flex;
 
-  &__image {
-    background-image: url("../assets/Background-Contact-Form.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 700px;
-  }
 
-  &__right {
-    margin-left: 700px;
-  }
-
-  &__title {
-    font-size: 38px;
-    color: $primary-text-color;
-  }
-
-  &__name {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: left;
-    font-weight: bold;
-
-    input {
-      width: 180px;
-      background-color: transparent;
-      border: none;
-      border-bottom: 2px solid lightgray;
-    }
-  }
-
-  &__button {
-    position: relative;
-    left: 130px;
-    width: 180px;
-    margin: 20px;
-    padding: 10px 25px;
-    background: transparent;
-    border: 1px solid lightgray;
-  }
-}
-
-.paginationBttns {
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  margin: 40px;
-  li {
-    &:first-child,
-    &:last-child {
-      display: none;
-    }
-  }
-}
-
-.paginationBttns a {
-  padding: 10px;
-  margin: 8px;
-  border-radius: 2px;
-  cursor: pointer;
-  border: 1px solid transparent;
-}
-
-.paginationBttns a:hover {
-  border: 1px solid $primary-text-color;
-}
-
-.paginationActive a {
-  border: 1px solid $primary-text-color;
-}
-
-.opacityBackground {
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 170px 0 170px 0;
-}

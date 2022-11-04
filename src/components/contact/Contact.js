@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import decorationImg from '../assets/Decoration.svg';
+import decorationImg from './Decoration.svg';
 
 function ContactForm() {
     const [name, setName] = useState("");
@@ -62,35 +62,31 @@ function ContactForm() {
 
     return (
         <div id="contact" className="contact">
-            <div className="contact__image">
-                <div className="opacityBackground">
-                    <div className="contact__right">
-                        <p className="contact__title" >Skontaktuj się z nami</p>
-                        <img src={decorationImg} alt="decoration"/>
-                        <form onSubmit={handleSubmit}>
-                            <div className="contact__name">
-                                <label>
-                                    Wpisz swoje imię
-                                    <br />
-                                    <input type="text" value={name} onChange={e => setName(e.target.value)} />
-                                </label >
-                                <label>
-                                    Wpisz swój email
-                                    <br />
-                                    <input type="text" value={email} onChange={e => setEmail(e.target.value)} />
-                                </label>
-                            </div>
-                            <label style={{ fontWeight: "bold" }}>
-                                Wpisz swoją wiadomość
-                            </label>
+            <div className="contact__right">
+                <p className="contact__title" >Skontaktuj się z nami</p>
+                <img src={decorationImg} alt="decoration" />
+                <form onSubmit={handleSubmit}>
+                    <div className="contact__name">
+                        <label>
+                            Wpisz swoje imię
                             <br />
-                            <textarea style={{ width: "440px", height: "100px", backgroundColor: "transparent", borderBottom: "1px solid grey" }} value={message} onChange={e => setMessage(e.target.value)} />
-                            <button className="contact__button" type="submit">Wyślij</button>
-                        </form>
-                        {success && <h2>Form sent!</h2>}
-                        {errors.map(error => <p key={error}>{error}</p>)}
+                            <input type="text" value={name} onChange={e => setName(e.target.value)} />
+                        </label >
+                        <label>
+                            Wpisz swój email
+                            <br />
+                            <input type="text" value={email} onChange={e => setEmail(e.target.value)} />
+                        </label>
                     </div>
-                </div>
+                    <label style={{ fontWeight: "bold" }}>
+                        Wpisz swoją wiadomość
+                    </label>
+                    <br />
+                    <textarea style={{ width: "440px", height: "100px", backgroundColor: "transparent", borderBottom: "1px solid grey" }} value={message} onChange={e => setMessage(e.target.value)} />
+                    <button className="contact__button" type="submit">Wyślij</button>
+                </form>
+                {success && <h2>Form sent!</h2>}
+                {errors.map(error => <p key={error}>{error}</p>)}
             </div>
         </div>
     );
