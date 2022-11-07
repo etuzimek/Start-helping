@@ -78,11 +78,10 @@ function ContactForm() {
                             <input type="text" value={email} onChange={e => setEmail(e.target.value)} />
                         </label>
                     </div>
-                    <label style={{ fontWeight: "bold" }}>
+                    <div className="contact__textarea">
                         Wpisz swoją wiadomość
-                    </label>
-                    <br />
-                    <textarea style={{ width: "440px", height: "100px", backgroundColor: "transparent", borderBottom: "1px solid grey" }} value={message} onChange={e => setMessage(e.target.value)} />
+                        <br />
+                        <textarea value={message} onChange={e => setMessage(e.target.value)} /></div>
                     <button className="contact__button" type="submit">Wyślij</button>
                 </form>
                 {success && <h2>Form sent!</h2>}
