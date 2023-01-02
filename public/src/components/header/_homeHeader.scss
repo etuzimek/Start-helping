@@ -1,0 +1,33 @@
+.header {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    :first-child img {
+      width: 50%;
+    }
+  }
+
+  &__right {
+    p {
+      font-size: 2.375rem;
+    }
+
+    img {
+      margin-top: 25px;
+      margin-bottom: 20px;
+    }
+
+    a {
+      font-size: 2.25rem;
+      text-transform: uppercase;
+      border: 1px solid $primary-text-color;
+      width: 310px;
+      height: 120px;
+      word-spacing: 100px;
+      font-family: $font-base;
+      font-weight: lighter;
+      cursor: pointer;
+    }
+  }
+}

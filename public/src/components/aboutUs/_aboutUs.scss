@@ -1,0 +1,35 @@
+.aboutus {
+  display: flex;
+  margin-top: 80px;
+
+  &__about {
+    margin-top: 100px;
+    font-size: 38px;
+    margin-bottom: 26px;
+  }
+
+  &__left {
+    background-color: $light-grey-color;
+    padding: 50px;
+    width: 95vw;
+  }
+
+  &__article {
+    font-size: 1.875rem;
+    padding: 55px 150px 40px 150px;
+    letter-spacing: -0.6px;
+  }
+
+  &__signature {
+    text-align: right;
+    padding-right: 130px;
+  }
+
+  &__img {
+    width: 100vw;
+    height: auto;
+    background-image: url("./People.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

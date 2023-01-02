@@ -1,0 +1,63 @@
+.contact {
+  display: flex;
+  justify-content: flex-end;
+  width: auto;
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url("./Background-Contact-Form.jpg");
+  background-size: cover;
+  font-family: $font-base;
+
+  &__right {
+    padding: 300px;
+  }
+
+  &__title {
+    font-size: 38px;
+    color: $primary-text-color;
+    padding-bottom: 25px;
+  }
+
+  &__name {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 60px;
+
+    input {
+      background-color: transparent;
+      border: none;
+      border-bottom: 3px solid lightgray;
+      width: 210px;
+      height: 2rem;
+    }
+  }
+
+  &__textarea {
+    font-weight: bold;
+    margin-top: 40px;
+    text-align: left;
+  
+    textarea {
+      border: none;
+      width: 100%;
+      height: 97px;
+      background-color: transparent;
+      border-bottom: 3px solid lightgray;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    font-size: 1.125rem;
+    margin-left: 300px;
+    padding: 13px 52px;
+    background: transparent;
+    border: 1px solid lightgray;
+  }
+}

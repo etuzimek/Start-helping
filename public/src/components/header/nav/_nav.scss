@@ -1,0 +1,50 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 37px;
+
+  &__login {
+    display: flex;
+    margin-right: 152px;
+    color: $grey-color;
+
+    li {
+      padding: 10px 15px;
+      font-size: 0.9rem;
+      border: 1px solid transparent;
+
+      a {
+        color: $grey-color;
+      }
+    }
+
+    :hover {
+      border-color: $nav-color;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    margin: 17px 152px 210px 0;
+
+    :last-child {
+      margin-right: 0;
+    }
+
+    li {
+      margin: 12px;
+      padding: 10px 15px;
+      font-size: 1.125rem;
+      border: 1px solid transparent;
+
+      a {
+        color: $grey-color;
+      }
+    }
+
+    :hover {
+      border-color: $primary-text-color;
+    }
+  }
+}

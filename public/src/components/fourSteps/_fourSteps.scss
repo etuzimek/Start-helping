@@ -1,0 +1,23 @@
+.foursteps {
+    font-family: $font-base;
+  
+    &__title {
+      font-size: 38px;
+      padding: 13px 0 25px 0;
+    }
+  
+    &__columns {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 71px;
+      background-color: $light-grey-color;
+      margin-top: 35px;
+  
+      div {
+        width: 134px;
+        margin: 0 86px 0 86px;
+        padding-bottom: 75px;
+      }
+    }
+  }
